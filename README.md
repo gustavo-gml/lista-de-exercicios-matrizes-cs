@@ -1,6 +1,6 @@
 # Exercícios de Linguagem e Técnicas de Programação
 
-Esse Repositório contém exercícios sobre matrizes, que foram solicitados pelo professor **Matheus Eloy Franco** da disciplina **Linguagem e Técnicas de Programação** do curso de **Sistemas de Informação** em que estou matriculado.
+Esse Repositório contém exercícios sobre matrizes que foram solicitados pelo professor **Matheus Eloy Franco** da disciplina **Linguagem e Técnicas de Programação** do curso de **Sistemas de Informação** em que estou matriculado.
 
 ## Objetivo
 
