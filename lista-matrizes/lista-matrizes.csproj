@@ -6,7 +6,7 @@
     <RootNamespace>lista_matrizes</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <startupObject>ex004</startupObject>
+    <startupObject>ex008</startupObject>
   </PropertyGroup>
 
 </Project>
