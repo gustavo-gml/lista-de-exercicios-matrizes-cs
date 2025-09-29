@@ -1,23 +1,26 @@
-/*Escrever um programa  que gere uma matriz de N Linhas x N Colunas  e apresente sua diagonal principal. 
-Dica, limite sua matriz a uma ordem 100. */
 using System;
 using MinhaBiblioteca;
-
-class ex004
+/*Escrever um programa  que gere uma matriz de N Linhas x N Colunas  e apresente sua diagonal secundária*/
+class ex005
 {
-    static void DiagPrincipal(int[,] mat)
+    static void DiagSecundaria(int[,] mat)
     {
-        Console.WriteLine("Diagonal principal da matriz: ");
-        
-        for (int i = 0; i < mat.GetLength(0); i++)
+        int ordem = mat.GetLength(0);
+        int decremento = 1;
+        Console.WriteLine("Diagonal secundária da matriz: ");
+
+        for (int i = 0; i < ordem; i++)
         {
-            for (int j = 0; j < mat.GetLength(1); j++)
+            
+            for (int j = 0; j < ordem; j++)
             {
-                if (j == i)
+                int controle = ordem;
+                if (i == j - (controle - decremento))
                 {
                     Console.Write($"[{mat[i, j]}] ");
                 }
             }
+            decremento+=2;
         }
     }
     static void Main()
@@ -33,16 +36,11 @@ class ex004
             ordem = int.Parse(Console.ReadLine());
         }
 
-
         int[,] matriz = new int[ordem, ordem];
 
         Func.GerarMatInt(matriz);
         Func.MostrarMatInt(matriz);
 
-        DiagPrincipal(matriz);
-
-
-
-
+        DiagSecundaria(matriz);
     }
 }
