@@ -46,7 +46,7 @@ namespace MinhaBiblioteca
             {
                 for (int j = 0; j < mat.GetLength(1); j++)
                 {
-                    mat[i, j] = rand.Next(100);
+                    mat[i, j] = rand.Next(101);
                 }
 
             }
