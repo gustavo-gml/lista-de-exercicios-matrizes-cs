@@ -20,7 +20,7 @@ namespace MinhaBiblioteca
             colunas = int.Parse(Console.ReadLine());
 
             return colunas;
-        }  
+        }
         public static void LerMatInt(int[,] mat) /*Solita que o usuário preencha uma matriz com dados do tipo int*/
         {
             Console.WriteLine("Entre com os dados da matriz.");
@@ -30,6 +30,21 @@ namespace MinhaBiblioteca
                 {
                     Console.Write($"Posição [{i},{j}]: ");
                     mat[i, j] = int.Parse(Console.ReadLine());
+                }
+
+            }
+            Console.WriteLine();
+        }
+        
+        public static void LerMatFloat(float[,] mat) /*Solita que o usuário preencha uma matriz com dados do tipo int*/
+        {
+            Console.WriteLine("Entre com os dados da matriz.");
+            for (int i = 0; i < mat.GetLength(0); i++)
+            {
+                for (int j = 0; j < mat.GetLength(1); j++)
+                {
+                    Console.Write($"Posição [{i},{j}]: ");
+                    mat[i, j] = float.Parse(Console.ReadLine());
                 }
 
             }
@@ -52,8 +67,22 @@ namespace MinhaBiblioteca
             }
             Console.WriteLine();
         }
-        
+
         public static void MostrarMatInt(int[,] mat) /*Mostra os dados de uma matriz linha por linha*/
+        {
+
+            for (int i = 0; i < mat.GetLength(0); i++)
+            {
+                for (int j = 0; j < mat.GetLength(1); j++)
+                {
+                    Console.Write($"[{mat[i, j]}] ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
+        
+        public static void MostrarMatFloat(float[,] mat) /*Mostra os dados de uma matriz linha por linha*/
         {
 
             for (int i = 0; i < mat.GetLength(0); i++)
